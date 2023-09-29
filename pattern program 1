@@ -1,0 +1,46 @@
+# different_pattern
+import java.util.*;
+public class Main
+{
+    static int j,i;
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    for(j=1;j<=n;j++)
+		    {
+		        if(i==j)
+		        {
+		            System.out.print("*");
+		        }
+		        else
+		        {
+		            System.out.print("0");
+		        }
+		    }
+		    j--;
+		    System.out.print("*");
+		    while(j>=1)
+		    {
+		        if(i==j)
+		        {
+		            System.out.print("*");
+		        }
+		        else
+		        {
+		            System.out.print("0");
+		        }
+		        j--;
+		    }
+		    System.out.println("");
+		}
+	}
+}
+
+output:
+4
+*000*000*
+0*00*00*0
+00*0*0*00
+000***000
